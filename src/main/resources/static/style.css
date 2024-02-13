@@ -1,0 +1,18 @@
+body {
+    background-color: #e8dddd;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    margin-left: 1rem;
+    padding: 0;
+}
+
+input,
+button,
+select {
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+}

@@ -4,19 +4,46 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Oblig1</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Bestilling av kinobiletter</h1>
+        <h1>Buy cinema tickets</h1>
         <form action="">
-            <label for="film">Velg film:</label>
-            <select name="Hello" id="film">
-                <option value="">Option 1</option>
-                <option value="">Option 1</option>
-                <option value="">Option 1</option></select
-            ><br />
+            <label for="movie">Choose movie:</label>
+            <select name="movie" id="movie">
+                <option value="">Movie 1</option>
+                <option value="">Movie 1</option>
+                <option value="">Movie 1</option>
+            </select>
+            <br />
 
-            <label for="antall">Antall</label>
-            <input type="number" name="" id="" />
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" required />
+            <br />
+
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" required />
+            <br />
+
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" required />
+            <br />
+
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" required />
+            <br />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <br />
+
+            <button onclick="buy()">Buy ticket</button>
         </form>
+
+        <h2>All tickets</h2>
+        <h2>Movie Amount FirstName LastName Phone E-mail</h2>
+        <div id="tickets"></div>
+
+        <button>Delete all tickets</button>
     </body>
 </html>
