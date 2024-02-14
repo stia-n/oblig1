@@ -1,4 +1,4 @@
-#Oblig 1
+# Oblig 1
 
 OsloMet username: s371395
 
