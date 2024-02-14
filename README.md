@@ -1,15 +1,12 @@
 #Oblig 1
 
-OsloMet brukernavn: s371395
+OsloMet username: s371395
 
-GitHub brukernavn: stia-n
+GitHub username: stia-n
 
 GitHub repo URL: https://github.com/stia-n/oblig1
 
-URL til Heroku app:
+Full name: Stian Gunnerus Haugen
 
-Fullt navn: Stian Gunnerus Haugen
-
-Kort beskrivelse av applikasjon (5-10 setninger):
-
-tbc
+Description:
+Small cinema ticketing system website written in HTML, JS and CSS. Input for selecting which movie, first and last name, phone number and email. All inputs have input validation, which is all written in JS and not with a form element. Tickets will be put in a list underneith the ordering system. All tickets can be deleted with the delete all tickets button.
