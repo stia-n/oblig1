@@ -8,42 +8,75 @@
     </head>
     <body>
         <h1>Buy cinema tickets</h1>
-        <form action="">
-            <label for="movie">Choose movie:</label>
-            <select name="movie" id="movie">
-                <option value="">Movie 1</option>
-                <option value="">Movie 1</option>
-                <option value="">Movie 1</option>
-            </select>
-            <br />
-
-            <label for="amount">Amount</label>
-            <input type="number" name="amount" id="amount" required />
-            <br />
-
-            <label for="firstname">First name</label>
-            <input type="text" name="firstname" id="firstname" required />
-            <br />
-
-            <label for="lastname">Last name</label>
-            <input type="text" name="lastname" id="lastname" required />
-            <br />
-
-            <label for="phone">Phone number</label>
-            <input type="tel" name="phone" id="phone" required />
-            <br />
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
-            <br />
-
-            <button onclick="buy()">Buy ticket</button>
-        </form>
+        <table>
+            <tr>
+                <td>
+                    <label for="movie">Choose movie:</label>
+                </td>
+                <!-- all input validation done through js -->
+                <!-- alternatively use a form with required attributes and patterns + isNaN for input validation -->
+                <td>
+                    <select id="movie">
+                        <option value="Select a movie..." selected disabled>Select a movie...</option>
+                        <option value="Oppenheimer">Oppenheimer</option>
+                        <option value="Barbie">Barbie</option>
+                        <option value="Barbenheimer">Barbenheimer</option>
+                    </select>
+                    <span id="movieError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="amount">Amount</label>
+                </td>
+                <td>
+                    <input type="number" id="amount" />
+                    <span id="amountError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="firstName">First name</label>
+                </td>
+                <td>
+                    <input type="text" id="firstName" />
+                    <span id="firstNameError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastName">Last name</label>
+                </td>
+                <td>
+                    <input type="text" id="lastName" />
+                    <span id="lastNameError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Phone number</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" />
+                    <span id="phoneError"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="email" />
+                    <span id="emailError"></span>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Buy ticket" onclick="buyTicket()" />
 
         <h2>All tickets</h2>
-        <h2>Movie Amount FirstName LastName Phone E-mail</h2>
         <div id="tickets"></div>
 
-        <button>Delete all tickets</button>
+        <button onclick="delTickets()">Delete all tickets</button>
+        <script src="main.js"></script>
     </body>
 </html>
