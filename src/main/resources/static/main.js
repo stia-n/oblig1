@@ -1,6 +1,7 @@
 let ticketsArray = [];
 let ticketsHTML = document.getElementById("tickets");
 
+// updates list of tickets on html
 function updateArray() {
     let concat = "";
     concat += "<table>";
@@ -19,6 +20,7 @@ function updateArray() {
     console.log(concat);
 }
 
+// adds ticket to ticket array
 function buyTicket() {
     if (validateInput()) {
         let movie = document.getElementById("movie").value;
@@ -48,6 +50,7 @@ function delTickets() {
     updateArray();
 }
 
+// input validation, returns true if input is valid
 function validateInput() {
     let counter = 0;
 
@@ -114,6 +117,7 @@ function validateInput() {
     }
 }
 
+// deletes user text from input boxes
 function delEntries() {
     let movie = document.getElementById("movie");
     let amount = document.getElementById("amount");
@@ -130,4 +134,5 @@ function delEntries() {
     email.value = "";
 }
 
+// for drawing the ticket list
 updateArray();
