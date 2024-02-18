@@ -102,6 +102,7 @@ function validateInput() {
 
     let email = document.getElementById("email").value;
     let emailError = document.getElementById("emailError");
+    // regex for email validation
     const regex = /[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/;
     if (email === "" || !regex.test(email)) {
         emailError.innerHTML = "You must enter a valid email.";
